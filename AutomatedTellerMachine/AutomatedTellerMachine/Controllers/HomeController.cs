@@ -45,8 +45,8 @@ namespace AutomatedTellerMachine.Controllers
 
         public ActionResult Serial(string letterCase)
         {
-            var serial = "ASPNETMVC78";
-            if (letterCase == "upper")
+            var serial = "ASPNETMVC5ATM";
+            if (letterCase == "lower")
                 return Content(serial.ToLower());
             return Content(serial);
         }

@@ -30,10 +30,16 @@
         </div>
     </div>
     <div class="container body-content">
+        <div class="row">
+            <div style="margin-top:5px">
+               
+                <img src="~/Content/Images/CogI-NOLOGO_RGB.png" class="img-responsive center-block" />
+            </div>
+        </div>
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - MVC Bank</p>
+            <p>&copy; @DateTime.Now.Year - MVC Bank - @Html.Action("Serial","Home",new { letterCase="lower"})</p>
         </footer>
     </div>
 
