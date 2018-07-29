@@ -23,8 +23,7 @@ namespace AutomatedTellerMachine.Models
         public string LastName { get; set; }
 
         [Display(Name = "Name")]
-        public string Name { get {
-                return String.Format("{0} {1}",FirstName,LastName); } }
+        public string Name { get {return String.Format("{0} {1}",FirstName,LastName); } }
 
         [DataType(DataType.Currency)]
         public decimal Balance { get; set; }
