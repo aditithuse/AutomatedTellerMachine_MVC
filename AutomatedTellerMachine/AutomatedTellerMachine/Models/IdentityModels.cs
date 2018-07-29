@@ -16,6 +16,8 @@ namespace AutomatedTellerMachine.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public string pin { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
