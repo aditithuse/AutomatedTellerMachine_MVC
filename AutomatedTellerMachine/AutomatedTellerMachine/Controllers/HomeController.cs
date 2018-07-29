@@ -28,5 +28,17 @@ namespace AutomatedTellerMachine.Controllers
 
             return View();
         }
+        public ActionResult Foo()
+        {
+            return View("About");
+        }
+
+        public ActionResult Serial(string letterCase)
+        {
+            var serial = "ASPNETMVC78";
+            if (letterCase == "upper")
+                return Content(serial.ToLower());
+            return Content(serial);
+        }
     }
 }
